@@ -15,8 +15,8 @@ O projeto foi pensado para ter uma interface limpa, moderna e organizada, seguin
 
 ## 🚀 Como rodar o projeto localmente
 
+
+```md
 ```bash
 npm install
 npm run dev
-
-```md
