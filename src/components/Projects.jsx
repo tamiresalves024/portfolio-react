@@ -1,24 +1,25 @@
 function Projects() {
-  const projects = [
-    {
-      title: "Landing Page Profissional",
-      description:
-        "Landing page desenvolvida em React com foco em layout limpo, responsividade e boas práticas.",
-      link: "#",
-    },
-    {
-      title: "Mini E-commerce",
-      description:
-        "Aplicação front-end com listagem de produtos, carrinho e organização de componentes.",
-      link: "#",
-    },
-    {
-      title: "Dashboard de Estudos",
-      description:
-        "Projeto em React para organização de estudos, utilizando componentes reutilizáveis.",
-      link: "#",
-    },
-  ];
+const projects = [
+  {
+    title: "Landing Page Profissional",
+    description:
+      "Landing page desenvolvida em React com foco em layout limpo, responsividade e boas práticas.",
+    link: "https://github.com/tamiresalves024/portfolio-react", // AJUSTE SE O NOME DO REPO FOR DIFERENTE
+  },
+  {
+    title: "Mini E-commerce",
+    description:
+      "Aplicação front-end com listagem de produtos, carrinho e organização de componentes.",
+    link: "https://github.com/tamiresalves024/mini-ecommerce-react",
+  },
+  {
+    title: "Dashboard de Estudos",
+    description:
+      "Projeto em React para organização de estudos, utilizando componentes reutilizáveis.",
+    link: "#", // depois a gente troca
+  },
+];
+
 
   return (
     <section style={styles.section}>
@@ -29,7 +30,11 @@ function Projects() {
           <div key={project.title} style={styles.card}>
             <h4 style={styles.cardTitle}>{project.title}</h4>
             <p style={styles.cardText}>{project.description}</p>
-            <a href={project.link} style={styles.link}>
+            <a href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={styles.link}
+            >
               Ver código
             </a>
           </div>
